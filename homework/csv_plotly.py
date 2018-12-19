@@ -15,13 +15,13 @@ for crime in crimes:
 
 dataset = {}
 for crime in crimes:
-    district = crime[4]
-    year = int(crime[8])
-    shooting = crime[6]
-    street = crime[13]
-    occured = crime[7]
-    code = crime[1]
     number = crime[0]
+    code = crime[1]
+    district = crime[4]
+    shooting = crime[6]
+    occured = crime[7]
+    year = int(crime[8])
+    street = crime[13]
     if shooting != '0':
         if number in dataset:
             if code in dataset[number]:
